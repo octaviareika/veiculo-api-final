@@ -19,14 +19,38 @@ function criaListaVeiculos(elemento, data){
         const listaHTML = 
                     data.map(veiculo => `
                         <li class="veiculo">
-                            <img src="${veiculo.imagem}" alt="${veiculo.nome}">
                             <h2>${veiculo.nome}</h2>
-                            <p>${veiculo.descricao}</p>
-                            <p>R$ ${veiculo.preco}</p>
+                            <p>${veiculo.ano}</p>
+                            <p>R$ ${veiculo.valor}</p>
                         </li>
                     `).join('');
         
                     ulNova.innerHTML = listaHTML; // Adiciona o conteúdo da lista
                     elemento.appendChild(ulNova); // Adiciona a lista ao elemento
+    }
+}
+
+
+
+var luxo = document.querySelector('[data-name=luxo]');
+// display noone
+luxo.style.display = 'none';
+
+
+
+
+geraVeiculos();
+function geraVeiculos(){
+    var urls = ['/veiculos/todos', '/veiculos/recentes', '/veiculos/economicos'];
+
+    try {
+        Promise.all(urls.map(url => getDados(url)))
+        .then(respostas => {
+            respostas.forEach((resposta, index) => {
+                criaListaVeiculos(datasSecao[Object.keys(datasSecao)[index]], resposta);
+            });
+        });
+    } catch (error) {
+        console.log(error);
     }
 }
