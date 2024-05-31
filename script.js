@@ -47,7 +47,9 @@ function geraVeiculos(){
         Promise.all(urls.map(url => getDados(url)))
         .then(respostas => {
             respostas.forEach((resposta, index) => {
-                criaListaVeiculos(datasSecao[Object.keys(datasSecao)[index]], resposta);
+                criaListaVeiculos(datasSecao.tudo, resposta[0]);
+                criaListaVeiculos(datasSecao.recente, resposta[1]);
+                criaListaVeiculos(datasSecao.economico, resposta[2]);
             });
         });
     } catch (error) {

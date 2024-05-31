@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+body {
+    /*fundo degrade*/
+    
+    background: linear-gradient(90deg, #39010f 0%, #bf002f 100%);
+
+}
+
+
+header {
+    background-color: none;
+    padding: 40px;
+}
+
+.lista-nao-ordenada {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    
+    padding: 20px;
+    margin: 20px;
+
+}
+
+h2 {
+    font-family: 'Libre Caslon Display', serif;
+    color: black;
+    font-size: 30px;
+
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Libre Caslon Display', serif;
+    color: white;
+    font-size: 30px;
+}
+
+.lista-veiculos {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.veiculos {
+    padding: 20px;
+    margin: 20px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
