@@ -30,13 +30,13 @@ class Slide {
         }, 1000); // muda paara a proxima imagem a cada 1 segundo
     }
 
-    next() {
+    next() { // metodo para ir para a proxima imagem
         if (this.counter >= this.carouselImages.length - 5) { // se for a ultima imagem
-            this.direction = -1;
-        } else if (this.counter <= 0) {
-            this.direction = 1;
+            this.direction = -1; // muda a direção
+        } else if (this.counter <= 0) { // se for a primeira imagem
+            this.direction = 1; // muda a direção
         }
-        this.carouselSlide.style.transition = "transform 0.4s ease-in-out";
+        this.carouselSlide.style.transition = "transform 0.4s ease-in-out"; // adiciona uma transição
         this.counter += this.direction;
         this.carouselSlide.style.transform = 'translateX(' + (-this.size * this.counter) + 'px)';
     }

@@ -62,7 +62,7 @@ h1 {
     border-bottom: 2px solid #d40000;
     padding-bottom: 40px;
     /*aumentar a margem da borda de baixo*/
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -71,7 +71,7 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     background-color: #f4d1d1;
-    padding: 10px;
+    padding: 5px;
 
 }
 
@@ -169,7 +169,7 @@ h3, p {
     border-style: solid;
     border-width: 4px;
     margin: 40px;
-    padding: 30px;
+    padding: 20px;
     background-color: #FFF;
     
 }
