@@ -22,7 +22,7 @@ body{
 
 }
 header {
-	background: url('/VeiculoAPIFront/img/campbell-3ZUsNJhi_Ik-unsplash.jpg');
+	background: url('./img/campbell-3ZUsNJhi_Ik-unsplash.jpg');
 	text-align: center;
 	width: 100%;
 	height: auto;
