@@ -31,7 +31,7 @@ class Slide {
     }
 
     next() { // metodo para ir para a proxima imagem
-        if (this.counter >= this.carouselImages.length - 5) { // se for a ultima imagem
+        if (this.counter >= this.carouselImages.length - 7) { // se for a ultima imagem
             this.direction = -1; // muda a direção
         } else if (this.counter <= 0) { // se for a primeira imagem
             this.direction = 1; // muda a direção
