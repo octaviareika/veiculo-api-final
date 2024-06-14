@@ -9,7 +9,7 @@ class Slide {
         this.carouselSlide = carouselSlide;
         this.carouselImages = carouselImages;
         this.prevBtn = prevBtn;
-        this.nextBtn = nextBtn;
+        this.nextBtn = nextBtn; // unhe
         this.counter = 0; // contador para saber em qual imagem estamos
         this.size = this.carouselImages[0].clientWidth; // pega o tamanho da imagem
         this.carouselSlide.style.transform = 'translateX(' + (-this.size * this.counter) + 'px)'; // inicializa o slide no primeiro item
